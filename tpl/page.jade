@@ -1,0 +1,17 @@
+!!!
+html
+	head
+		title= "Lamp Switch"
+		script(src='/light.js')
+		script(src='/socket.io/socket.io.js')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	body
+		h1.text-center Lamp Switch
+		.controls.controls-row.row-fluid
+			input#accendi.span2(class='btn btn-large btn-warning offset4' type='button', value='LIIIIGHT!')
+			input#spengi.span2(class='btn btn-large btn-primary' type='button', value='DARKNEEES!')
+	

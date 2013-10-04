@@ -1,0 +1,11 @@
+{
+    "name": "Light Switch",
+    "version": "0.0.1",
+    "description": "Web interface for wireless light switch",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "developer"
+}
