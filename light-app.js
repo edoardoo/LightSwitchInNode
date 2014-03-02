@@ -5,14 +5,14 @@
 //define some dependencies
 var express = require("express");
 var exec = require('child_process');
-
+var c = require('appcache-node');
 //give a name to the web server
 var app = express();
  //open the socket and listen to 3700 port
 
 
 var io = require('socket.io').listen(app.listen('3700'));
-
+var cf = c.newCache([]);
 
 //let's set the view folder and the view engine 'jade'
 app.set('views', __dirname + '/tpl');
@@ -21,6 +21,11 @@ app.engine('jade', require('jade').__express);
 app.get("/", function(req, res){
     res.render("page");
 });
+app.all('/app.cache', function(req, res){
+	    res.writeHead(200, {'Content-Type': 'text/cache-manifest'});
+		    res.end(cf);
+})
+
 app.use(express.static(__dirname + '/public'));
 
 //now define what happen when connecting the client connect to the socket

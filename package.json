@@ -5,7 +5,8 @@
     "dependencies": {
         "socket.io": "latest",
         "express": "latest",
-        "jade": "latest"
+        "jade": "latest",
+	"app-cache": "latest"
     },
     "author": "developer"
 }
