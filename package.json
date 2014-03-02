@@ -6,7 +6,7 @@
         "socket.io": "latest",
         "express": "latest",
         "jade": "latest",
-	"app-cache": "latest"
+	"appcache-node": "latest"
     },
     "author": "developer"
 }
