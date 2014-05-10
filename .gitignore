@@ -1,0 +1,4 @@
+node_modules/
+views/
+bootScript.sh
+.DS_Store

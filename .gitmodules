@@ -1,0 +1,3 @@
+[submodule "RemoteRaspberry"]
+	path = RemoteRaspberry
+	url = https://github.com/edoardoo/RemoteRaspberry.git
